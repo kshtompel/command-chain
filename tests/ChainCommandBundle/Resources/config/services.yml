@@ -1,0 +1,16 @@
+services:
+    chain_command.registry:
+        class: ChainCommandBundle\Registry\ChainCommandCollectionRegistry
+
+    baz.command.baz_hey:
+        class: Tests\ChainCommandBundle\Command\BazHeyTestCommand
+        tags:
+            -  { name: chain.command, chain: "foo.command.foo_hello" }
+
+    baz.command.baz_yo:
+        class: Tests\ChainCommandBundle\Command\BazYoTestCommand
+        tags:
+            -  { name: chain.command, chain: "foo.command.foo_hello" }
+
+    foo.command.foo_hello:
+        class: Tests\ChainCommandBundle\Command\FooTestCommand

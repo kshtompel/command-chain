@@ -1,0 +1,44 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+    config.vm.hostname = "command-chain.dev"
+    config.vm.box = "bento/centos-7.1"
+
+    config.vm.provision "puppet_modules", type:"shell", run: "always",  path: "puppet_modules_install.sh"
+
+    config.puppet_install.puppet_version = "3.7.3"
+    config.vm.provision "puppet" do |puppet|
+        puppet.hiera_config_path = "hiera_dev.yaml"
+        puppet.options = ["--pluginsync","--verbose", "--environment dev","--debug"]
+        puppet.manifest_file = ""
+        puppet.manifests_path = "manifests"
+    end
+
+    config.vm.provision "bootstrap", type:"shell", run: "always",  path: "bootstrap.sh"
+
+    config.vm.define "test", primary: true, autostart: true do |development|
+        config.vm.network :private_network, ip: "10.100.170.3"
+
+        config.vm.synced_folder(
+            "./../",
+            "/var/www/command-chain",
+            nfs: true,
+            map_uid: Process.uid,
+            map_gid: Process.gid
+        )
+
+        development.vm.provider "virtualbox" do |v|
+            v.customize ["modifyvm", :id, "--memory", 1024]
+            v.customize ["modifyvm", :id, "--cpus", 1]
+
+            v.name = "Command-chain"
+        end
+    end
+
+    if Vagrant.has_plugin?("vagrant-cachier")
+        config.cache.scope = :box
+    end
+end

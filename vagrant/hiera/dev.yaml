@@ -1,0 +1,46 @@
+classes:
+    - ssh
+
+#--SSH Client--
+ssh::storeconfigs_enabled: false
+ssh::client_options:
+    'Host *':
+        SendEnv: 'LANG LC_*'
+        ForwardX11Trusted: 'yes'
+        ServerAliveInterval: '10'
+        HostbasedAuthentication: 'yes'
+        EnableSSHKeysign: 'yes'
+        UserKnownHostsFile: '/dev/null'
+        StrictHostKeyChecking: 'no'
+        LogLevel: 'DEBUG'
+
+# NGINX
+nginx::nginx_vhosts:
+    "%{hiera('domain')}_ssl":
+        www_root: "%{hiera('web_dir')}"
+        try_files: ["$uri /app.php$is_args$args"]
+        server_name: [ "%{hiera('domain')}" ]
+        listen_port: 443 # For use only SSL connections
+        ssl: true
+        ssl_port: 443
+        ssl_cert: "/var/www/command-chain/vagrant/keys/ssl/command-chain.dev.crt"
+        ssl_key: "/var/www/command-chain/vagrant/keys/ssl/command-chain.dev.key"
+        raw_append:
+            - "charset UTF-8;"
+
+
+nginx::nginx_locations:
+    admin_proxy:
+        vhost: "%{hiera('domain')}_ssl"
+        www_root: "%{hiera('web_dir')}"
+        ensure: present
+        ssl: true
+        ssl_only: true
+        location: '~ ^/(app|app_dev|app_test)\.php(/|$)'
+        fastcgi: 127.0.0.1:9000
+        fastcgi_param:
+            SCRIPT_FILENAME: $document_root$fastcgi_script_name
+            HTTPS: "on"
+
+php::packages:
+    - php56w-pecl-xdebug

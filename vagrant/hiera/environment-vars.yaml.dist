@@ -1,0 +1,13 @@
+domain: command-chain.dev
+web_dir: /var/www/command-chain/web
+bin_dir: /var/www/command-chain/bin
+source_dir: /vagrant
+
+php_fpm_user: vagrant
+php_fpm_group: vagrant
+
+rabbitmq_user_username: command
+rabbitmq_user_password: Q1w2e3r4
+
+postgres_username: command
+postgres_password: Q1w2e3r4

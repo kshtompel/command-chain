@@ -1,0 +1,480 @@
+[16-07-08 06:42:39] info: Array
+(
+    [sku] => abc-4589
+    [qoh] => 3
+    [cost] => 5.67
+    [salePrice] => 7.27
+)
+
+[16-07-08 06:42:39] info: Array
+(
+    [sku] => hjg-3821
+    [qoh] => 1
+    [cost] => 7.89
+    [salePrice] => 12.00
+)
+
+[16-07-08 06:42:39] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 11
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:42:39] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 19
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:42:39] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 6
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:42:39] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 3
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:53:54] info: Array
+(
+    [sku] => abc-4589
+    [qoh] => 3
+    [cost] => 5.67
+    [salePrice] => 7.27
+)
+
+[16-07-08 06:53:54] info: Array
+(
+    [sku] => hjg-3821
+    [qoh] => 1
+    [cost] => 7.89
+    [salePrice] => 12.00
+)
+
+[16-07-08 06:53:54] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 11
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:53:54] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 19
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:53:54] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 6
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:53:54] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 3
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:54:06] info: Array
+(
+    [sku] => abc-4589
+    [qoh] => 3
+    [cost] => 5.67
+    [salePrice] => 7.27
+)
+
+[16-07-08 06:54:06] info: Array
+(
+    [sku] => hjg-3821
+    [qoh] => 1
+    [cost] => 7.89
+    [salePrice] => 12.00
+)
+
+[16-07-08 06:54:06] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 11
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:54:06] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 19
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:54:06] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 6
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:54:06] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 3
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:54:45] info: Array
+(
+    [sku] => abc-4589
+    [qoh] => 3
+    [cost] => 5.67
+    [salePrice] => 7.27
+)
+
+[16-07-08 06:54:45] info: Array
+(
+    [sku] => hjg-3821
+    [qoh] => 1
+    [cost] => 7.89
+    [salePrice] => 12.00
+)
+
+[16-07-08 06:54:45] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 11
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:54:45] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 19
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:54:45] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 6
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:54:45] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 3
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:54:47] info: Array
+(
+    [sku] => abc-4589
+    [qoh] => 3
+    [cost] => 5.67
+    [salePrice] => 7.27
+)
+
+[16-07-08 06:54:47] info: Array
+(
+    [sku] => hjg-3821
+    [qoh] => 1
+    [cost] => 7.89
+    [salePrice] => 12.00
+)
+
+[16-07-08 06:54:47] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 11
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:54:47] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 19
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:54:47] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 6
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:54:47] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 3
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:54:58] info: Array
+(
+    [sku] => abc-4589
+    [qoh] => 3
+    [cost] => 5.67
+    [salePrice] => 7.27
+)
+
+[16-07-08 06:54:58] info: Array
+(
+    [sku] => hjg-3821
+    [qoh] => 1
+    [cost] => 7.89
+    [salePrice] => 12.00
+)
+
+[16-07-08 06:54:58] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 11
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:54:58] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 19
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:54:58] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 6
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:54:58] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 3
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:55:06] info: Array
+(
+    [sku] => abc-4589
+    [qoh] => 3
+    [cost] => 5.67
+    [salePrice] => 7.27
+)
+
+[16-07-08 06:55:06] info: Array
+(
+    [sku] => hjg-3821
+    [qoh] => 1
+    [cost] => 7.89
+    [salePrice] => 12.00
+)
+
+[16-07-08 06:55:06] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 11
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:55:06] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 19
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:55:07] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 6
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:55:07] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 3
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:59:37] info: Array
+(
+    [sku] => abc-4589
+    [qoh] => 3
+    [cost] => 5.67
+    [salePrice] => 7.27
+)
+
+[16-07-08 06:59:37] info: Array
+(
+    [sku] => hjg-3821
+    [qoh] => 1
+    [cost] => 7.89
+    [salePrice] => 12.00
+)
+
+[16-07-08 06:59:37] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 11
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:59:37] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 19
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:59:37] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 6
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:59:37] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 3
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:59:51] info: Array
+(
+    [sku] => abc-4589
+    [qoh] => 3
+    [cost] => 5.67
+    [salePrice] => 7.27
+)
+
+[16-07-08 06:59:51] info: Array
+(
+    [sku] => hjg-3821
+    [qoh] => 1
+    [cost] => 7.89
+    [salePrice] => 12.00
+)
+
+[16-07-08 06:59:51] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 11
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:59:51] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 19
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 06:59:51] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 6
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 06:59:51] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 3
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 07:03:16] info: Array
+(
+    [sku] => abc-4589
+    [qoh] => 3
+    [cost] => 5.67
+    [salePrice] => 7.27
+)
+
+[16-07-08 07:03:16] info: Array
+(
+    [sku] => hjg-3821
+    [qoh] => 1
+    [cost] => 7.89
+    [salePrice] => 12.00
+)
+
+[16-07-08 07:03:16] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 11
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 07:03:16] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 19
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+
+[16-07-08 07:03:16] info: Array
+(
+    [sku] => xrf-3827
+    [qoh] => 6
+    [cost] => 15.27
+    [salePrice] => 19.99
+)
+
+[16-07-08 07:03:16] info: Array
+(
+    [sku] => eer-4521
+    [qoh] => 3
+    [cost] => 8.45
+    [salePrice] => 1.03
+)
+

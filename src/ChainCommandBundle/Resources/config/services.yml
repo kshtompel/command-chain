@@ -1,0 +1,17 @@
+services:
+    chain_command.registry:
+        class: ChainCommandBundle\Registry\ChainCommandCollectionRegistry
+
+    chain_command.console_command_listener:
+        class: ChainCommandBundle\EventListener\ConsoleCommandListener
+        arguments: [ '@chain_command.registry' ]
+        tags:
+            - { name: kernel.event_listener, event: console.command }
+    # Subscribers
+    chain_command.subscriber.logger:
+        class: ChainCommandBundle\EventListener\LoggerSubscriber
+        arguments:
+            - '@logger'
+        tags:
+            - { name: monolog.logger }
+            - { name: kernel.event_subscriber }

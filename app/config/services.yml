@@ -1,0 +1,11 @@
+parameters:
+#    parameter_name: value
+
+services:
+    monolog.formatter.custom_formatter:
+        class: Monolog\Formatter\LineFormatter
+        arguments:
+            - "[%%datetime%%] %%message%% %%context%% %%extra%%\n"
+            - null
+            - false
+            - true

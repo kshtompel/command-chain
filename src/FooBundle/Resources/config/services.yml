@@ -1,0 +1,5 @@
+services:
+    foo.command.foo_hello:
+        class: FooBundle\Command\FooCommand
+        tags:
+            -  { name: console.command }

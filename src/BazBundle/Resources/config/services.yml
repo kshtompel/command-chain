@@ -1,0 +1,12 @@
+services:
+    baz.command.baz_hey:
+        class: BazBundle\Command\BazHeyCommand
+        tags:
+            -  { name: console.command }
+            -  { name: chain.command, chain: "foo.command.foo_hello" }
+
+    baz.command.baz_yo:
+        class: BazBundle\Command\BazYoCommand
+        tags:
+            -  { name: console.command }
+            -  { name: chain.command, chain: "foo.command.foo_hello" }

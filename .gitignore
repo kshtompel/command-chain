@@ -1,0 +1,34 @@
+# Composer
+/vendor/
+/composer.phar
+
+# Cache and logs directory
+/var/*
+!/var/secure/uploads/.gitkeep
+!/var/cache/.gitkeep
+!/var/logs/.gitkeep
+/var/tmp
+
+# Configuration file
+/app/config/parameters.yml
+
+# Binary and executable directory/files
+/bin/*
+!/bin/console
+
+# Vagrant
+/vagrant/.vagrant/
+/vagrant/hiera/dev-vars.yaml
+
+# Web directories
+/web/bundles
+/web/build/*
+/web/css
+/web/js
+!/web/build/.gitkeep
+/web/uploads/*
+!/web/uploads/.gitkeep
+
+# Other directories and files
+/nbproject
+/.idea/*
