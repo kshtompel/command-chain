@@ -2,18 +2,11 @@
 
 namespace Tests\ChainCommandBundle\EventListener;
 
-use ChainCommandBundle\EventListener\ConsoleCommandListener;
+use AppKernel;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\BufferedOutput;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\EventDispatcher\EventDispatcher;
-use Tests\ChainCommandBundle\Command\BazHeyTestCommand;
-use Tests\ChainCommandBundle\Command\BazYoTestCommand;
-use Tests\ChainCommandBundle\Command\FooTestCommand;
-use Tests\ChainCommandBundle\DependencyInjection\ChainCommandTestExtension;
-use Tests\ChainCommandBundle\DependencyInjection\CompilerPass\ChainCommandCompilerTestPass;
 
 class ConsoleCommandListenerTest extends WebTestCase
 {
@@ -21,31 +14,10 @@ class ConsoleCommandListenerTest extends WebTestCase
 
     protected function setUp()
     {
-        $this->app = new Application(self::$kernel);
-        // Test commands
-        $this->app->add(new FooTestCommand());
-        $this->app->add(new BazHeyTestCommand());
-        $this->app->add(new BazYoTestCommand());
+        $kernel = new AppKernel('test', true);
 
-        $container = new ContainerBuilder();
+        $this->app = new Application($kernel);
 
-        // Test extension
-        $chainCommandExtensionTest = new ChainCommandTestExtension();
-        $chainCommandExtensionTest->load([], $container);
-
-        // Test Compiler pass
-        $pass = new ChainCommandCompilerTestPass();
-        $pass->process($container);
-
-        $registry = $container->get('chain_command.registry');
-
-        // Depended real event listener.
-        $listener = new ConsoleCommandListener($registry);
-
-        $dispatcher = new EventDispatcher();
-        $dispatcher->addListener('console.command', [$listener, 'onConsoleCommand']);
-
-        $this->app->setDispatcher($dispatcher);
         $this->app->setAutoExit(false);
     }
 
@@ -61,12 +33,12 @@ class ConsoleCommandListenerTest extends WebTestCase
     public function testMasterChainCommand()
     {
 
-        $input = new ArrayInput([FooTestCommand::NAME]);
+        $input = new ArrayInput(['foo:hello']);
         $output = new BufferedOutput();
 
         $this->app->run($input, $output);
 
-        $this->assertStringMatchesFormat(FooTestCommand::MESSAGE."\n%s\n%s", $output->fetch());
+        $this->assertStringMatchesFormat("Hello from Foo!\n%s\n%s", $output->fetch());
     }
 
     /**
@@ -93,8 +65,8 @@ class ConsoleCommandListenerTest extends WebTestCase
         return [
             [
                 [
-                    BazHeyTestCommand::NAME,
-                    BazYoTestCommand::NAME
+                    'baz:hey',
+                    'baz:yo'
                 ]
             ]
         ];
