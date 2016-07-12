@@ -41,7 +41,7 @@ class ChainCommandArrayCollection implements ChainCommandCollectionInterface, \I
     /**
      * {@inheritdoc}
      */
-    public function addCommands(ChainCommandCollectionInterface $commands)
+    public function addCommands(array $commands)
     {
         foreach ($commands as $command) {
             $this->addCommand($command);
@@ -65,17 +65,25 @@ class ChainCommandArrayCollection implements ChainCommandCollectionInterface, \I
     /**
      * {@inheritdoc}
      */
-    public function hasCommand($name)
+    public function hasCommand(ChainCommandItem $command)
+    {
+        return isset($this->commands[$command->getName()]);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function has($name)
     {
         return isset($this->commands[$name]);
     }
 
     /**
-     * {@inheritoc}
+     * {@inheritdoc}
      */
-    public function removeCommand($name)
+    public function removeCommand(ChainCommandItem $command)
     {
-        unset ($this->commands[$name]);
+        unset ($this->commands[$command->getName()]);
 
         return $this;
     }

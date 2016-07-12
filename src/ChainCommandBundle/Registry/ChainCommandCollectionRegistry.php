@@ -37,7 +37,7 @@ class ChainCommandCollectionRegistry implements ChainCommandRegistryInterface
      */
     public function get($key)
     {
-        if ($this->commands->hasCommand($key)) {
+        if ($this->commands->has($key)) {
             return $this->commands->getCommand($key);
         }
 

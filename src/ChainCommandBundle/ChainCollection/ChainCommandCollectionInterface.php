@@ -20,9 +20,9 @@ interface ChainCommandCollectionInterface extends \Countable
     /**
      * Add commands
      *
-     * @param ChainCommandCollectionInterface $actions
+     * @param array|ChainCommandItem[] $actions
      */
-    public function addCommands(ChainCommandCollectionInterface $actions);
+    public function addCommands(array $actions);
 
     /**
      * Get command from collection
@@ -40,12 +40,21 @@ interface ChainCommandCollectionInterface extends \Countable
      *
      * @return bool
      */
-    public function hasCommand($name);
+    public function has($name);
+
+    /**
+     * Has command
+     *
+     * @param ChainCommandItem $command
+     *
+     * @return bool
+     */
+    public function hasCommand(ChainCommandItem $command);
 
     /**
      * Remove command from collection.
      *
-     * @param string $name
+     * @param ChainCommandItem $command
      */
-    public function removeCommand($name);
+    public function removeCommand(ChainCommandItem $command);
 }
